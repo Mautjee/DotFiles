@@ -38,6 +38,9 @@ M.general = {
     -- new buffer
     ["<leader>b"]  = { "<cmd> enew <CR>", "new buffer" },
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
+    -- CUSTOM
+
+    ["<leader>u"]  = { "vim.cmd.UndotreeToggle", "toggle line number" },
     ["<leader>gs"] = { vim.cmd.Git, "Fugitive" },
   },
   t = {
