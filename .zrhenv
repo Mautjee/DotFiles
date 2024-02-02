@@ -1,0 +1,3 @@
+. "$HOME/.cargo/env"
+
+export PATH="$PATH:/Users/mauro/.foundry/bin"
