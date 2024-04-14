@@ -1,0 +1,48 @@
+# Author: Mauro Eijsenring
+# Last Update: 09-30-2023
+# 
+#
+#
+#############################
+#                           #
+#         Yabai             #
+#                           #
+#############################
+
+# SECTION: Focus (alt + ctrl)
+
+# focus window left (east)
+alt + ctrl - l : yabai -m window --focus east
+# focus window up (north)
+alt + ctrl - k  : yabai -m window --focus north
+# focus window right (west)
+alt + ctrl - h  : yabai -m window --focus west
+# focus window down (south)
+alt + ctrl - j  : yabai -m window --focus south
+
+# SECTION: Window (alt + shif)
+
+# move window left (east)
+alt + shift - l : yabai -m window --warp east
+# move window up (north)
+alt + shift - k : yabai -m window --warp north
+# move window right (west)
+alt + shift - h : yabai -m window --warp west
+# move window down (south)
+alt + shift - j : yabai -m window --warp south
+
+# SECTION: Desktops (alt + cmd)
+#
+# create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
+alt + cmd - n : yabai -m space --create && \
+                   index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && \
+                   yabai -m window --space "${index}" && \
+                   yabai -m space --focus "${index}"
+
+# change focus to next desktop
+alt + cmd - l : yabai -m space --focus next
+
+# change focus to previous desktop
+alt + cmd - h : yabai -m space --focus prev
+
+# SECTION: Monitor (alt + cmd + shift)
