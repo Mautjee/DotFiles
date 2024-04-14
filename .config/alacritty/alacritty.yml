@@ -1,22 +1,32 @@
 live_config_reload: true
 
+env:
+  TERM: xterm-256color
+
 window:
   opacity: 0.95
   padding:
     x: 10
-    y: 10
+    y: 5
   dynamic_padding: false
   decorations: buttonless
 
+selection:
+  save_to_clipboard: true
+
 import:
   # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
   #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
   # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
-  # - ~/.config/alacritty/gruvbox/gruvbox.yml
+  - ~/.config/alacritty/gruvbox/gruvbox.yml
 
 font:
   normal:
     family: "SFMono Nerd Font"
     style: Regular
   size: 15.0
+
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left, mods: Alt, chars: "\x1BB" }
