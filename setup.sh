@@ -1,3 +1,4 @@
+#!/bin/bash
 # install all the application that I use
 # Author: Mauro Eijsenring
 # Date: 2019-11-17
@@ -6,40 +7,39 @@
 # Usage: ./setup.sh
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)";
 
 # Install Homebrew Cask
-brew tap homebrew/cask
+brew tap homebrew/cask;
 
 # Install Homebrew Cask Fonts
-brew tap homebrew/cask-fonts
+brew tap homebrew/cask-fonts;
 
 # Install Homebrew Cask Drivers
-brew tap homebrew/cask-drivers
+brew tap homebrew/cask-drivers;
 
 # install applications
-brew install --cask arc
-brew install --cask raycast
-brew install --cask whatsapp
-brew install --cask spotify
-brew install --cask slack
-brew install --cask notion
+brew install --cask arc;
+brew install --cask raycast;
+brew install --cask whatsapp;
+brew install --cask spotify;
+brew install --cask slack;
+brew install --cask notion;
 
+brew isntall stowe
+# Make links to config files 
+stow .
 
-# TODO: fetch repo from github
-brew install pass
-
-# TODO: Copy the configs to proper location 
 # install dev environment
-brew install --cask alacritty
-brew install nvim
-brew install yabai
-brew install skhd
-brew install tmux
-brew install zoxide
-brew install fzf
-brew install ripgrep
-brew install starship
+brew install --cask alacritty;
+brew install nvim;
+brew install yabai;
+brew install skhd;
+brew install tmux;
+brew install zoxide;
+brew install fzf;
+brew install ripgrep;
+brew install starship;
 
 # install Fonts
 # TODO: Add fonts
