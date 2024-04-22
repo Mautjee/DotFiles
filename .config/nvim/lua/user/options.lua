@@ -1,5 +1,5 @@
 -- Set the global leader to space
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Set tabs to 2 spaces
@@ -55,5 +55,4 @@ vim.opt.scrolloff = 8
 -- Place a column line
 vim.opt.colorcolumn = "80"
 
-vim.keymap.set({"n", "v"}, "<leader>Y", [["+y]],{})
-vim.keymap.set("n", "<leader>Y", [["+Y]],{})
+vim.opt.swapfile = false
