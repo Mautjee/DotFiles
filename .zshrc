@@ -17,6 +17,7 @@ alias nvimLazy="NVIM_APPNAME=nvimLazy nvim"
 alias nvim2="NVIM_APPNAME=nvimSelf2 nvim"
 alias nvim="neovim"
 alias vi="neovim"
+alias kgpa="kubectl get pods -A"
 
 alias mzk="node /Users/mauro/.nvm/versions/node/v18.12.1/lib/node_modules/zkapp-cli/src/bin/index.js"
 
@@ -55,3 +56,13 @@ export PATH
 export PATH="/opt/homebrew/opt/avr-gcc@8/bin:$PATH"
 export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
 export PATH="/opt/homebrew/opt/arm-none-eabi-gcc@8/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="$HOME/Dev/flutter/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+source <(kubectl completion zsh)
