@@ -65,4 +65,6 @@ export PATH="$HOME/Dev/flutter/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 source <(kubectl completion zsh)
