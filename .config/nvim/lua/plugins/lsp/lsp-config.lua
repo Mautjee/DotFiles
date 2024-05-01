@@ -132,6 +132,7 @@ return {
 							},
 						},
 					},
+					root_dir = lsp_util.find_git_ancestor,
 				})
 			end,
 			["eslint"] = function()
