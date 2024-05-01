@@ -1,0 +1,34 @@
+import = ["/Users/mauro/.config/alacritty/gruvbox/gruvbox.toml"]
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15.0
+
+[font.normal]
+family = "SFMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+
+[selection]
+save_to_clipboard = true
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.95
+
+[window.padding]
+x = 10
+y = 5
