@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 # install all the application that I use
 # Author: Mauro Eijsenring
 # Date: 2019-11-17
