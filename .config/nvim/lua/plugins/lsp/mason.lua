@@ -31,6 +31,7 @@ return {
 				"tsserver",
 				"html",
 				"jsonls",
+				"gopls",
 				"tailwindcss",
 				"pyright",
 				"astro",

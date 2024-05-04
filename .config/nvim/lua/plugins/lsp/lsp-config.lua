@@ -144,6 +144,15 @@ return {
 					root_dir = lsp_util.find_git_ancestor,
 				})
 			end,
+			["gopls"] = function()
+				lspconfig.gopls.setup({
+					capabilities = capabilities,
+					settings = {
+						workingDirectory = { mode = "location" },
+					},
+					root_dir = lsp_util.find_git_ancestor,
+				})
+			end,
 			["lua_ls"] = function()
 				-- configure lua server (with special settings)
 				lspconfig["lua_ls"].setup({
