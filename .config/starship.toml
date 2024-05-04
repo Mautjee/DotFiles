@@ -1,0 +1,9 @@
+[git_branch]
+symbol = '🌱 '
+truncation_symbol = ''
+
+[kubernetes]
+disabled = false
+
+[aws]
+disabled = true
