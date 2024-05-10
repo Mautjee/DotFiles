@@ -18,6 +18,7 @@ alias nvim2="NVIM_APPNAME=nvimSelf2 nvim"
 alias nvim="neovim"
 alias vi="neovim"
 alias kgpa="kubectl get pods -A"
+alias lgit="lazygit"
 
 alias mzk="node /Users/mauro/.nvm/versions/node/v18.12.1/lib/node_modules/zkapp-cli/src/bin/index.js"
 
