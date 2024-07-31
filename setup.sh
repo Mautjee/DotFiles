@@ -39,6 +39,7 @@ brew install zoxide;
 brew install fzf;
 brew install ripgrep;
 brew install starship;
+brew install k9s;
 
 
 # Make links to config files 
