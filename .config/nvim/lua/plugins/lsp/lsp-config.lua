@@ -170,6 +170,11 @@ return {
 					},
 				})
 			end,
+			["solidity_ls_nomicfoundation"] = function()
+				lspconfig["solidity_ls_nomicfoundation"].setup({
+					capabilities = capabilities,
+				})
+			end,
 		})
 
 		-- Configure borderd for LspInfo ui

@@ -29,6 +29,7 @@ return {
 			-- list of servers for mason to install
 			ensure_installed = {
 				"tsserver",
+				"solidity_ls_nomicfoundation",
 				"html",
 				"jsonls",
 				"gopls",
