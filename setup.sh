@@ -28,8 +28,6 @@ brew install --cask slack;
 brew install --cask notion;
 
 brew isntall stowe
-# Make links to config files 
-stow .
 
 # install dev environment
 brew install --cask alacritty;
@@ -41,6 +39,10 @@ brew install zoxide;
 brew install fzf;
 brew install ripgrep;
 brew install starship;
+
+
+# Make links to config files 
+stow .
 
 # install Fonts
 # TODO: Add fonts
