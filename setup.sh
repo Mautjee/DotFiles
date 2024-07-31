@@ -32,8 +32,8 @@ brew isntall stowe
 # install dev environment
 brew install --cask alacritty;
 brew install nvim;
-brew install yabai;
-brew install skhd;
+# brew install yabai;
+# brew install skhd;
 brew install tmux;
 brew install zoxide;
 brew install fzf;
