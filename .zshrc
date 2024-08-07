@@ -1,17 +1,12 @@
 # ~/.zshrc
 
 eval "$(starship init zsh)"
-source ~/Dev/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
+
 zstyle '*:compinit' arguments -D -i -u -C -w
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-alias ide="~/.config/devEnv/ide.sh"
-alias ta="~/.config/devEnv/ta.sh"
-
-alias nvim="neovim"
-alias vi="neovim"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" 
 
 alias kgpa="kubectl get pods -A"
 alias lgit="lazygit"
