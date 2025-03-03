@@ -8,7 +8,7 @@
 # Usage: ./setup.sh
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)";
+/bin/bash -  "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)";
 
 # Install Homebrew Cask
 brew tap homebrew/cask;
@@ -26,11 +26,11 @@ brew install --cask whatsapp;
 brew install --cask spotify;
 brew install --cask slack;
 brew install --cask notion;
+brew install --cask alacritty;
 
 brew isntall stowe
 
 # install dev environment
-brew install --cask alacritty;
 brew install nvim;
 # brew install yabai;
 # brew install skhd;
