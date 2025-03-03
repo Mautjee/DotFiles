@@ -5,7 +5,17 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 
 		-- Install neodev for better nvim configuration and plugin authoring via lsp configurations
-		{ "folke/neodev.nvim", opts = {} },
+		{
+			"folke/lazydev.nvim",
+			ft = "lua", -- only load on lua files
+			opts = {
+				library = {
+					-- See the configuration section for more details
+					-- Load luvit types when the `vim.uv` word is found
+					{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+				},
+			},
+		},
 
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 
@@ -22,8 +32,6 @@ return {
 
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-
-		require("neodev").setup()
 
 		local keymap = vim.keymap -- for conciseness
 
@@ -132,7 +140,8 @@ return {
 							},
 						},
 					},
-					root_dir = lsp_util.find_git_ancestor,
+					-- root_dir = lsp_util.find_git_ancestor,
+					root_dir = lsp_util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
 				})
 			end,
 			["eslint"] = function()
