@@ -33,4 +33,19 @@ M.copy_relative_filepath = function()
   vim.notify("Copied to clipboard: " .. relative_path, vim.log.levels.INFO)
 end
 
+M.copy_path = function()
+  local filename = vim.fn.expand("%")
+  vim.fn.setreg("+", filename)
+  print("Filename copied to clipboard!")
+end
+
+M.copy_file_path_with_content = function()
+  local filename = vim.fn.expand("%")
+  local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+  local content = table.concat(lines, "\n")
+  local clipboard_content = filename .. ":\n\n```\n" .. content .. "\n```"
+  vim.fn.setreg("+", clipboard_content)
+  print("Filename and content copied to clipboard!")
+end
+
 return M
