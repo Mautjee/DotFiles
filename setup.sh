@@ -20,15 +20,13 @@ brew tap homebrew/cask-fonts;
 brew tap homebrew/cask-drivers;
 
 # install applications
-brew install --cask arc;
 brew install --cask raycast;
 brew install --cask whatsapp;
 brew install --cask spotify;
-brew install --cask slack;
 brew install --cask notion;
 brew install --cask alacritty;
 
-brew isntall stowe
+brew isntall stowe;
 
 # install dev environment
 brew install nvim;
