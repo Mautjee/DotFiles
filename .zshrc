@@ -31,3 +31,11 @@ source <(kubectl completion zsh)
 export NARGO_HOME="/Users/mauro/.nargo"
 
 export PATH="$PATH:$NARGO_HOME/bin"
+
+# Added by Windsurf
+export PATH="/Users/mauro/.codeium/windsurf/bin:$PATH"
+
+alias gg="lazygit"
+alias vim="nvim"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
